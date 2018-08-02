@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TicketDetailActivity">
+
+    <TextView
+        android:id="@+id/tvTicketNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:text="TicketNo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:textColor="@android:color/black" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_custom_margin20">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="@dimen/activity_custom_margin10"
+            android:layout_marginLeft="@dimen/activity_custom_margin10"
+            android:layout_marginRight="@dimen/activity_custom_margin10"
+            android:layout_marginTop="@dimen/activity_custom_margin10"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill">
+
+                <TextView
+                    android:id="@+id/tvCustomerDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_alignParentTop="true"
+
+                    android:text="@string/customer_details"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvCustomerDetail"
+                    android:text="@string/name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCustomerDetail"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginStart="@dimen/activity_custom_margin50"
+                    android:layout_toEndOf="@+id/tvName"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_below="@+id/tvName"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:text="@string/mobile_no"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/tvCustomerName"
+
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginStart="@dimen/activity_custom_margin16"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_toEndOf="@+id/tvMobile"
+                    android:text="9808901245"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvMobile"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:text="@string/email"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/tvCustomerMobile"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginStart="@dimen/activity_custom_margin50"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_toEndOf="@+id/tvEmail"
+                    android:text="user@example.com"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="@dimen/activity_custom_margin10"
+            android:layout_marginLeft="@dimen/activity_custom_margin10"
+            android:layout_marginRight="@dimen/activity_custom_margin10"
+            android:layout_marginTop="@dimen/activity_custom_margin10"
+            android:layout_row="1"
+            android:layout_rowWeight="4"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill">
+
+
+                <TextView
+                    android:id="@+id/tvCustomerAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_alignParentTop="true"
+
+                    android:text="@string/address"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:textColor="@android:color/black" />
+
+                <ImageButton
+                    android:id="@+id/ivMapView"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/activity_custom_margin10"
+
+
+                    android:layout_marginStart="222dp"
+                    android:layout_toEndOf="@+id/tvCustomerAddress"
+                    android:onClick="showMap"
+                    app:srcCompat="@android:drawable/ic_dialog_map" />
+
+                <TextView
+                    android:id="@+id/tvBuilding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvCustomerAddress"
+                    android:text="@string/building_no"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerBuilding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/tvCustomerAddress"
+                    android:layout_marginStart="@dimen/activity_custom_margin50"
+                    android:layout_toEndOf="@+id/tvBuilding"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvBuilding"
+                    android:text="@string/street"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/tvBuilding"
+                    android:layout_marginStart="@dimen/activity_custom_margin50"
+                    android:layout_toEndOf="@+id/tvBuilding"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvStreet"
+                    android:text="@string/city"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/tvStreet"
+                    android:layout_marginStart="@dimen/activity_custom_margin50"
+                    android:layout_toEndOf="@+id/tvBuilding"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/tvState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvCity"
+                    android:text="@string/state"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/tvCity"
+                    android:layout_marginStart="@dimen/activity_custom_margin50"
+                    android:layout_toEndOf="@+id/tvBuilding"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    android:id="@+id/tvPinCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_marginStart="@dimen/activity_custom_margin8"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tvState"
+                    android:text="@string/pin_code"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tvCustomerPinCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_custom_margin10"
+                    android:layout_marginTop="@dimen/activity_custom_margin10"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/tvState"
+                    android:layout_marginStart="@dimen/activity_custom_margin50"
+                    android:layout_toEndOf="@+id/tvBuilding"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    android:textColor="@android:color/black" />
+
+
+                <Button
+                    android:id="@+id/btStartService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCustomerPinCode"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/activity_custom_margin10"
+                    android:text="Start Service"
+                    android:onClick="startService" />
+
+
+            </RelativeLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </GridLayout>
+
+
+</RelativeLayout>
